@@ -4,7 +4,8 @@
   "description": "javascript client for conductor",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "mocha test/",
+    "lint": "eslint ."
   },
   "keywords": [
     "conductor",
@@ -14,6 +15,15 @@
   "license": "Apache-2.0",
   "dependencies": {
     "request": "^2.88.0",
-    "request-promise": "^4.2.2"
+    "request-promise": "^4.2.2",
+    "request-promise-native": "^1.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "sinon": "^7.0.0"
   }
 }

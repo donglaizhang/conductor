@@ -1,6 +1,7 @@
 'use strict';
 
-  //= require('./condu');
+import { WORKFLOW } from('./conductor-urls');
+const workflow = require('./workflow');
 
 let ConductorClient = class {
   constructor(origin) {
