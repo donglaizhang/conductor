@@ -35,6 +35,7 @@ module.exports = class HttpClient {
       resolveWithFullResponse: true
     };
 
+    console.log('here', options);
     return rp(options).catch((e) => {
       handleError(`Unable to invoke Conductor API with uri: ${uri}, caused by:`, e);
       return Promise.reject(e);
